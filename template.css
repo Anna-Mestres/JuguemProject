@@ -47,31 +47,10 @@ table {
 	border-spacing: 0;
 }
 
-@font-face{
- font-family: "Cambria";
- src: url(../../web-tipo/cambria.woff) format("woff");
- font-weight: normal;
- font-style: normal;
-}
-
-
-@font-face{
- font-family: "Franklin";
- src: url(../../web-tipo/ITCFranklinGothicStd-Book.woff) format("woff");
- font-weight: normal;
- font-style: normal;
-}
-
-@font-face{
- font-family: "Franklin";
- src: url(../../web-tipo/ITCFranklinGothicStd-BkCdIt.woff) format("woff");
- font-weight: normal;
- font-style: italic;
-}
 
 @font-face{
  font-family: "Gulax";
- src: url(../../web-tipo/Gulax-Regular.woff) format("woff");
+ src: url(typo/Gulax-Regular.woff) format("woff"), url(typo/Gulax-Regular.eot) format("eot"),url(typo/Gulax-Regular.woff2) format("woff2");
  font-weight: normal;
  font-style: normal;
 }
@@ -82,7 +61,7 @@ table {
 	background-color: #f6f5f2;
 	margin: 0;
 	padding: 0;
-	font-family: Cambria;
+	font-family: 'Source Serif 4', sans-serif;
 	cursor:url(images/curso/rodona.png), auto;
 }
 
@@ -102,7 +81,7 @@ a:hover{
 	background-color: orangered;
 	transition: background-color .3s;
 	color: white;
-		cursor:url(images/curso/rodona.png), auto;
+	cursor:url(images/curso/rodona.png), auto;
 }
 
 .logo-portada img{
@@ -130,9 +109,8 @@ nav a{
 }
 
 .pico3{
-	font-family: Franklin;
-	font-style: normal;
 	text-align:center;
+	font-family: 'Source Serif 4', sans-serif;
 }
 
 @media screen and (min-width: 800px) {
@@ -158,8 +136,8 @@ nav a{
 
 	.explicacio{
 		visibility: visible;
-		width:600px;
-		height:400px;
+		width:100%;
+		height:100%;
 		line-height:400px;
 		margin:0px auto;
 		text-align:center;
@@ -192,7 +170,7 @@ nav a{
 		visibility: visible;
 		width:100%;
 		height:100%;
-		line-height:400px;
+		line-height:500px;
 		margin:0px auto;
 		text-align:center;
 	}
@@ -264,7 +242,7 @@ nav a{
 		visibility: visible;
 		width:100%;
 		height:100%;
-		line-height:400px;
+		line-height:550px;
 		margin:0px auto;
 		text-align:center;
 	}
