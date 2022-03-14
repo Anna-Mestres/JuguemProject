@@ -1,0 +1,339 @@
+kl/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face{
+ font-family: "Cambria";
+ src: url(../../web-tipo/cambria.woff) format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+@font-face{
+ font-family: "Franklin";
+ src: url(../../web-tipo/ITCFranklinGothicStd-Book.woff) format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face{
+ font-family: "Franklin";
+ src: url(../../web-tipo/ITCFranklinGothicStd-BkCdIt.woff) format("woff");
+ font-weight: normal;
+ font-style: italic;
+}
+
+@font-face{
+ font-family: "Gulax";
+ src: url(../../web-tipo/Gulax-Regular.woff) format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+
+* {
+	background-color: #f6f5f2;
+	margin: 0;
+	padding: 0;
+	font-family: Cambria;
+	cursor:url(images/curso/rodona.png), auto;
+}
+
+p{
+	font-size: 18px;
+	font-family: 'Source Serif 4', sans-serif;
+}
+
+h2{
+	font-size: 20px;
+	font-family: Gulax;
+	font-style: normal;
+}
+
+
+a:hover{
+	background-color: orangered;
+	transition: background-color .3s;
+	color: white;
+		cursor:url(images/curso/rodona.png), auto;
+}
+
+.logo-portada img{
+	height: 100%;
+	width: auto;
+	display:block;
+	margin:auto;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	color: #2d211f;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #2d211f;
+	border-top: 1px solid #2d211f;
+}
+
+.explicacio{
+	visibility: hidden;
+}
+
+.pico3{
+	font-family: Franklin;
+	font-style: normal;
+	text-align:center;
+}
+
+@media screen and (min-width: 800px) {
+
+
+	body{
+		margin-bottom: 30px;
+	}
+
+
+	nav a{
+		display: block;
+		text-decoration: none;
+		color: #2d211f;
+		position: relative;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #2d211f;
+		border-top: 1px solid #2d211f;
+	}
+
+	.explicacio{
+		visibility: visible;
+		width:600px;
+		height:400px;
+		line-height:400px;
+		margin:0px auto;
+		text-align:center;
+	}
+
+	.explicacio img {
+	vertical-align:middle;
+}
+
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1200px)  {
+	body{
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom: 30px;
+	}
+	.logo-portada img{
+		height: 100%;
+	}
+
+	header{
+		width: 100%;
+		height: 100px;
+		border-bottom: 2px solid #2d211f;
+	}
+
+	.explicacio{
+		visibility: visible;
+		width:100%;
+		height:100%;
+		line-height:400px;
+		margin:0px auto;
+		text-align:center;
+	}
+
+	.explicacio img {
+	vertical-align:middle;
+}
+
+	.menu{
+		width: 100%;
+		height: 100px;
+		margin: auto;
+	}
+
+	.logo-portada{
+		width: 20%;
+		height: 100px;
+		float: left;
+	}
+
+	nav{
+		width: 80%;
+		height: 100px;
+		float: left;
+		padding-top: 40px;
+		box-sizing: border-box;
+	}
+
+	nav ul li a{
+		display: inherit;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding-left: 30px;
+		color: #2d211f;
+		position: inherit;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		border-bottom: inherit;
+		border-top: inherit;
+		letter-spacing: 1px;
+	}
+
+	nav ul li{
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body{
+		margin-left: 150px;
+		margin-right: 150px;
+		margin-bottom: 30px;
+	}
+
+
+	.logo-portada img{
+		height: 100%;
+	}
+
+	header{
+		width: 100%;
+		height: 100px;
+		border-bottom: 2px solid #2d211f;
+	}
+
+	.explicacio{
+		visibility: visible;
+		width:100%;
+		height:100%;
+		line-height:400px;
+		margin:0px auto;
+		text-align:center;
+	}
+
+	.explicacio img {
+	vertical-align:middle;
+}
+
+	.menu{
+		width: 100%;
+		height: 100px;
+		margin: auto;
+	}
+
+	.logo-portada{
+		width: 30%;
+		height: 100px;
+		float: left;
+	}
+
+	nav{
+		width: 70%;
+		height: 100px;
+		float: left;
+		padding-top: 40px;
+		box-sizing: border-box;
+	}
+
+	nav ul li a{
+		display: inherit;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding-left: 30px;
+		color: #2d211f;
+		position: inherit;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		border-bottom: inherit;
+		border-top: inherit;
+		letter-spacing: 1px;
+	}
+
+	nav ul li{
+		display: inline;
+	}
+
+
+}
+
+
+.logo {
+	position: fixed;
+  width: 150px;
+  text-align:center;
+	right: 40%;
+	float: left;
+  }
+
+.navegacion-portada a{
+	display: block;
+	text-decoration: none;
+	color: #2d211f;
+	border-bottom: 1px solid #2d211f;
+	border-top: 1px solid #2d211f;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
