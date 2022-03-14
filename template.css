@@ -85,8 +85,7 @@ a:hover{
 }
 
 .logo-portada img{
-	height: 100%;
-	width: auto;
+	width: 100%;
 	display:block;
 	margin:auto;
 }
@@ -145,6 +144,7 @@ nav a{
 
 	.explicacio img {
 	vertical-align:middle;
+	width: 100%;
 }
 
 }
@@ -177,6 +177,7 @@ nav a{
 
 	.explicacio img {
 	vertical-align:middle;
+	width: 100%;
 }
 
 	.menu{
@@ -189,7 +190,14 @@ nav a{
 		width: 20%;
 		height: 100px;
 		float: left;
+		box-sizing: border-box;
 	}
+
+	.logo-portada img{
+		height: 100%;
+		width: auto;
+	}
+
 
 	nav{
 		width: 80%;
@@ -230,6 +238,7 @@ nav a{
 
 	.logo-portada img{
 		height: 100%;
+		width: auto;
 	}
 
 	header{
@@ -249,6 +258,7 @@ nav a{
 
 	.explicacio img {
 	vertical-align:middle;
+	width: 100%;
 }
 
 	.menu{
