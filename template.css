@@ -103,8 +103,14 @@ nav a{
 	border-top: 1px solid #2d211f;
 }
 
-.explicacio{
+/* .explicacio {
 	visibility: hidden;
+} */
+
+.explicacio img {
+vertical-align:middle;
+width: 100%;
+padding-bottom: 20px;
 }
 
 .pico3{
@@ -112,7 +118,17 @@ nav a{
 	font-family: 'Source Serif 4', sans-serif;
 }
 
-@media screen and (min-width: 800px) {
+.logo {
+	text-align: center;
+}
+
+.logo img{
+	height: 100px;
+	width: 100px;
+	vertical-align:middle;
+}
+
+@media screen and (min-width: 850px) and (orientation: landscape) {
 
 
 	body{
@@ -147,10 +163,34 @@ nav a{
 	width: 80%;
 }
 
+.logo-portada{
+	width: 20%;
+	height: 100px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.logo-portada img{
+	height: 90%;
+	width: auto;
+}
+
+.logo{
+	width: 20%;
+	height: 100px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.logo img{
+	height: 90%;
+	width: auto;
+}
+
 }
 
 
-@media screen and (min-width: 800px) and (max-width: 1200px)  {
+@media screen and (min-width: 850px) and (max-width: 1200px) and (orientation: landscape) {
 	body{
 		margin-left: 50px;
 		margin-right: 50px;
@@ -198,6 +238,19 @@ nav a{
 		width: auto;
 	}
 
+	.logo{
+		width: 20%;
+		height: 100px;
+		float: left;
+		box-sizing: border-box;
+	}
+
+	.logo img{
+		height: 90%;
+		width: auto;
+	}
+
+
 
 	nav{
 		width: 80%;
@@ -228,7 +281,7 @@ nav a{
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (orientation: landscape) {
 	body{
 		margin-left: 150px;
 		margin-right: 150px;
@@ -237,6 +290,11 @@ nav a{
 
 
 	.logo-portada img{
+		height: 90%;
+		width: auto;
+	}
+
+	.logo img{
 		height: 90%;
 		width: auto;
 	}
@@ -273,6 +331,12 @@ nav a{
 		float: left;
 	}
 
+	.logo {
+		width: 30%;
+		height: 100px;
+		float: left;
+	}
+
 	nav{
 		width: 70%;
 		height: 100px;
@@ -302,26 +366,4 @@ nav a{
 	}
 
 
-}
-
-
-.logo {
-	position: fixed;
-  width: 150px;
-  text-align:center;
-	right: 40%;
-	float: left;
-  }
-
-.navegacion-portada a{
-	display: block;
-	text-decoration: none;
-	color: #2d211f;
-	border-bottom: 1px solid #2d211f;
-	border-top: 1px solid #2d211f;
-	position: relative;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
 }
