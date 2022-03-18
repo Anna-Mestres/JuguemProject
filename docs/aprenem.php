@@ -14,8 +14,7 @@ if (!empty($_POST)) {
     }
 
 
-    if (empty($email)) {
-    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = 'Email is invalid';
     }
 
